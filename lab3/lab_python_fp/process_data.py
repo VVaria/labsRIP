@@ -6,7 +6,7 @@ from unique import uniqueSort
 from gen_random import gen_random
 from time import sleep
 
-path = "lab3\lab_python_fp\data_light.json"
+path = "lab3/lab_python_fp/data_light.json"
 
 global data
 with open(path, encoding='utf-8') as f:
