@@ -19,6 +19,8 @@ class Unique:
             if self.index >= len(self.data):
                 raise StopIteration
             else:
+                if type(self.data) is object: 
+                    self.data = list(self.data)
                 current = self.data[self.index]
                 self.index = self.index + 1
                 if self.ignore_case:
@@ -45,8 +47,8 @@ def uniqueSort(arr):
 for i in Unique(["ABC", "dBeRt", "dbert", "abc"], ignore_case=True):
     print(i, end=" ")
 print()
-f = gen_random(7, 1, 3)
-for i in f:
+f = list(gen_random(7, 1, 3))
+for i in Unique(f):
     print(i, end=" ")
 print()
 for i in Unique([1, 6, 4, 3, 6, 4, 3, 2, 76, 3, 23, 4]):
