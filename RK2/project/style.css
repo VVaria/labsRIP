@@ -1,0 +1,13 @@
+table {
+    border: 2px solid rebeccapurple;
+    }
+    
+    td,
+    th {
+    border: 2px solid goldenrod; background-color: white;
+    }
+    
+    .td-color {
+    background-color: yellowgreen; color: white;
+    }
+    
